@@ -1,0 +1,16 @@
+{
+    "editor.formatOnSave": true,
+    "editor.tabSize": 3,
+    "explorer.fileNesting.enabled": false,
+	"explorer.fileNesting.expand": false,
+    "prettier.printWidth": 120,
+    "prettier.singleQuote": false,
+	"prettier.trailingComma": "none",
+	"prettier.useTabs": true,
+    "typescript.extension.sortImports.quoteStyle": "single",
+	"typescript.extension.sortImports.sortOnSave": true,
+    "cSpell.words": [
+        "postcompile",
+        "roycenobles"
+    ],
+}

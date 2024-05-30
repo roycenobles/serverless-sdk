@@ -55,6 +55,7 @@ export class Entity<T> {
 		return new Date().toISOString();
 	}
 
+	// enable override for id customization
 	protected getUniqueId(): string {
 		return uuid();
 	}

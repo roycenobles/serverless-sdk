@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"description": "Software development kit for my personal AWS serverless applications.",
 	"exports": {
-		"./models": "./models/index.js"
+		"./errors": "./errors/index.js",
+		"./models": "./models/index.js",
+		"./validation": "./validation/index.js"
 	},
 	"scripts": {
 		"pretest": "npm run compile",
@@ -45,6 +47,8 @@
 		"typescript": "5.1.6"
 	},
 	"dependencies": {
+		"ajv": "^8.14.0",
+		"ajv-formats": "^3.0.1",
 		"uuid": "^9.0.1"
 	}
 }

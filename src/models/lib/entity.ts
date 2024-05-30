@@ -1,9 +1,13 @@
+import { DomainEvent } from './domain-event';
+import { schemaValidator } from '../../validation/lib/schema-validator';
 import { v4 as uuid } from 'uuid';
 
 export class Entity<T> {
 	private readonly _id: string;
 	private readonly _created: string;
+	private _events: DomainEvent[] = [];
 	private _updated: string;
+
 	protected props: T;
 
 	public get id(): string {
@@ -16,6 +20,10 @@ export class Entity<T> {
 
 	public get updated(): string {
 		return this._updated;
+	}
+
+	protected get domainEvents(): DomainEvent[] {
+		return this._events;
 	}
 
 	constructor(props: T, id?: string, created?: string, updated?: string) {
@@ -35,7 +43,19 @@ export class Entity<T> {
 		this._updated = this.getDateString();
 	}
 
+	protected addDomainEvent(event: DomainEvent): void {
+		this._events.push(event);
+	}
+
+	protected clearDomainEvents(): void {
+		this._events = [];
+	}
+
 	protected getDateString(): string {
 		return new Date().toISOString();
+	}
+
+	protected validate(schema: Record<string, unknown>): void {
+		schemaValidator(schema, this.props);
 	}
 }

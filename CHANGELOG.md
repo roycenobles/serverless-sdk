@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/roycenobles/serverless-sdk/compare/v1.1.0...v1.2.0) (2024-05-30)
+
+
+### Features
+
+* generating release ([c42066c](https://github.com/roycenobles/serverless-sdk/commit/c42066ca43a01caa0d00e0808b9261d271e6c08b))
+
 # [1.1.0](https://github.com/roycenobles/serverless-sdk/compare/v1.0.0...v1.1.0) (2024-05-30)
 
 

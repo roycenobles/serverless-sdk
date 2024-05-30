@@ -27,7 +27,7 @@ export class Entity<T> {
 	}
 
 	constructor(props: T, id?: string, created?: string, updated?: string) {
-		this._id = id ? id : uuid();
+		this._id = id ? id : this.getUniqueId();
 		this._created = created ? created : this.getDateString();
 		this._updated = updated ? updated : this.getDateString();
 
@@ -53,6 +53,10 @@ export class Entity<T> {
 
 	protected getDateString(): string {
 		return new Date().toISOString();
+	}
+
+	protected getUniqueId(): string {
+		return uuid();
 	}
 
 	protected validate(schema: Record<string, unknown>): void {

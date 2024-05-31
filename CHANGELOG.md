@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/roycenobles/serverless-sdk/compare/v1.2.0...v1.3.0) (2024-05-31)
+
+
+### Features
+
+* added model properties ([c024f23](https://github.com/roycenobles/serverless-sdk/commit/c024f233aaadcc33f1e029d7e41847de22dd8c04))
+
 # [1.2.0](https://github.com/roycenobles/serverless-sdk/compare/v1.1.0...v1.2.0) (2024-05-30)
 
 

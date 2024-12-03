@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/roycenobles/serverless-sdk/compare/v1.3.0...v1.4.0) (2024-12-03)
+
+
+### Features
+
+* added unit of work ([f4d24e2](https://github.com/roycenobles/serverless-sdk/commit/f4d24e20dc243ea6c9adc9e2dd84d0e4cf468bc5))
+
 # [1.3.0](https://github.com/roycenobles/serverless-sdk/compare/v1.2.0...v1.3.0) (2024-05-31)
 
 

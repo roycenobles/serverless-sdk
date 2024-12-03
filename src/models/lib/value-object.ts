@@ -1,6 +1,6 @@
 import { schemaValidator } from '../../validation/lib/schema-validator';
 
-interface ValueObjectProps {
+export interface ValueObjectProps {
 	[index: string]: unknown;
 }
 

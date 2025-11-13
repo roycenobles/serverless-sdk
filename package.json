@@ -2,6 +2,18 @@
 	"name": "@roycenobles/serverless-sdk",
 	"version": "1.0.0",
 	"description": "Software development kit for my personal AWS serverless applications.",
+	"homepage": "https://github.com/roycenobles/serverless-sdk#readme",
+	"bugs": {
+		"url": "https://github.com/roycenobles/serverless-sdk/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/roycenobles/serverless-sdk.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"author": "Royce Nobles",
 	"exports": {
 		"./errors": "./errors/index.js",
 		"./models": "./models/index.js",
@@ -16,21 +28,9 @@
 		"postcompile": "cp package.json dist/package.json && cp package-lock.json dist/package-lock.json && cp README.md dist/README.md",
 		"fix": "gts fix"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/roycenobles/serverless-sdk.git"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/roycenobles"
-	},
 	"keywords": [
 		"CDK"
 	],
-	"author": "Royce Nobles",
-	"bugs": {
-		"url": "https://github.com/roycenobles/serverless-sdk/issues"
-	},
-	"homepage": "https://github.com/roycenobles/serverless-sdk#readme",
 	"devDependencies": {
 		"@jest/globals": "^29.7.0",
 		"@semantic-release/changelog": "^6.0.3",

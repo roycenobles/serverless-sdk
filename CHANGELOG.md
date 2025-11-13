@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/roycenobles/serverless-sdk/compare/v1.4.0...v2.0.0) (2025-11-13)
+
+
+### Features
+
+* configured to publish ([9daa562](https://github.com/roycenobles/serverless-sdk/commit/9daa562006458bbe88512f1fc391aa5146b42c4c))
+
+
+### BREAKING CHANGES
+
+* published
+
 # [1.4.0](https://github.com/roycenobles/serverless-sdk/compare/v1.3.0...v1.4.0) (2024-12-03)
 
 
